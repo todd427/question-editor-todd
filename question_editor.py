@@ -135,8 +135,8 @@ def main():
     # Download button is always at the bottom
     st.markdown("---")
     st.subheader("Download Current Questions JSON")
-    if "data" in st.session_state and st.session_state.data:
-        json_bytes = io.BytesIO(json.dumps(st.session_state.data, indent=2, ensure_ascii=False).encode("utf-8"))
+    if "data" in st.session_state and st.session_state["data"]:
+        json_bytes = io.BytesIO(json.dumps(st.session_state["data"], indent=2, ensure_ascii=False).encode("utf-8"))
         st.download_button(
             label="⬇️ Download questions JSON",
             data=json_bytes,
@@ -144,7 +144,8 @@ def main():
             mime="application/json"
         )
     else:
-        st.info("No questions data loaded or available yet to download.")
+        st.info("No data to download. Please load or add questions first.")
+
     st.markdown("---")
     st.caption("Built with 🦊 by Kit for Todd.")
 
