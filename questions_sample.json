@@ -1,0 +1,40 @@
+{
+  "Todd-age-0-2": {
+    "questions": [
+      {
+        "text": "What was your birth date, time, and place?",
+        "category": "birth",
+        "notes": "Essential for timeline and records.",
+        "priority": 1,
+        "required": true,
+        "attention": true
+      },
+      {
+        "text": "What was your first word?",
+        "category": "special",
+        "notes": "",
+        "priority": 2,
+        "required": false,
+        "attention": false
+      },
+      {
+        "text": "Did you have a favorite stuffed animal or blanket? Describe it.",
+        "category": "special",
+        "notes": "",
+        "priority": 3,
+        "required": false,
+        "attention": false
+      },
+      {
+        "text": "Who spent the most time caring for you?",
+        "category": "family",
+        "notes": "",
+        "priority": 4,
+        "required": false,
+        "attention": false
+      }
+      // ... add the rest (copy from earlier snippet, or say “Kit, paste all 30!”)
+    ],
+    "status": "building"
+  }
+}
