@@ -1,6 +1,7 @@
 import streamlit as st
 import json
 from streamlit_sortables import sort_items
+import io
 
 # Categories and their colors
 CATEGORY_COLORS = {
