@@ -129,7 +129,16 @@ def main():
     if st.button("Save Questions"):
         save_questions(data, json_file)
         st.success(f"Saved to {json_file}")
-
+    # (Inside main(), after the Save button and before the end)
+    st.markdown("---")
+    st.subheader("Download Current Questions JSON")
+    json_bytes = io.BytesIO(json.dumps(data, indent=2, ensure_ascii=False).encode("utf-8"))
+    st.download_button(
+        label="⬇️ Download questions JSON",
+        data=json_bytes,
+        file_name=json_file,
+        mime="application/json"
+    )
     st.markdown("---")
     st.caption("Built with 🦊 by Kit for Todd.")
 
