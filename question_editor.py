@@ -60,7 +60,7 @@ def main():
                 data[new_stage] = {"questions": [], "status": "building"}
                 stage = new_stage
                 st.success(f"Stage '{new_stage}' created.")
-                st.experimental_rerun()
+                st.stop()
             else:
                 st.warning("Stage already exists.")
 
