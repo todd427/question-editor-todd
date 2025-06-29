@@ -130,6 +130,8 @@ def main():
             save_questions(data, json_file)
             st.success(f"Saved to {json_file}")
 
+    st.write("DEBUG - st.session_state.data:", st.session_state.get("data"))
+
     # Download button is always at the bottom
     st.markdown("---")
     st.subheader("Download Current Questions JSON")
