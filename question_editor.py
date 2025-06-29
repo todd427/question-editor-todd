@@ -36,7 +36,7 @@ def render_question(q, i):
     )
 
 def main():
-    st.title("📝 Deluxe Question Editor (Ages & Stages)")
+    st.title("📝 Question Editor (Ages & Stages)")
 
     st.write("**Create, edit, and organize questions for each stage of persona-building.**")
 
