@@ -141,6 +141,8 @@ def main():
             file_name=st.session_state.get("json_file", "questions_sample.json"),
             mime="application/json"
         )
+    else:
+        st.info("No questions data loaded or available yet to download.")
     st.markdown("---")
     st.caption("Built with 🦊 by Kit for Todd.")
 
