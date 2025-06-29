@@ -150,3 +150,8 @@ def main():
 
 if __name__ == "__main__":
     main()
+
+import io
+test_data = {"hello": "world"}
+test_bytes = io.BytesIO(json.dumps(test_data).encode("utf-8"))
+st.download_button("Download Test JSON", test_bytes, file_name="test.json", mime="application/json")
