@@ -101,7 +101,8 @@ def main():
             if st.button(f"Delete Q{i+1}", key=f"del_{i}"):
                 qs.pop(i)
                 st.warning("Question deleted. Please save.")
-                st.experimental_rerun()
+                st.stop()
+
 
     # Add new question
     st.subheader("Add New Question")
